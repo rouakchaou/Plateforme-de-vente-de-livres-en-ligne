@@ -1,0 +1,157 @@
+   
+    nav {
+      background-color: rgb(186, 220, 248);
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px; /* Ajustez la taille de votre logo */
+      margin-right: 10px;
+    }
+
+    .menu {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .menu li {
+      margin-right: 20px;
+    }
+
+    .menu li:last-child {
+      margin-right: 0; /* Supprimer la marge pour le dernier élément */
+    }
+
+    .menu li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    .menu li a:hover {
+      color: #000; /* Couleur au survol du lien */
+    }
+
+    .user-info {
+      display: flex;
+      align-items: center;
+    }
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgb(186, 220, 248);
+  }
+  .login-box {
+      width: 300px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #333;
+      background: #fff;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-box h2 {
+      margin-bottom: 30px;
+      text-align: center;
+  }
+  
+  .user-box {
+      position: relative;
+      margin-bottom: 25px;
+  }
+  
+  .user-box input {
+      width: 100%;
+      padding: 10px 0;
+      font-size: 16px;
+      color: #333;
+      border: none;
+      border-bottom: 1px solid #777;
+      outline: none;
+      background: transparent;
+  }
+  
+  .user-box label {
+      position: absolute;
+      top: 0;
+      left: 0;
+      pointer-events: none;
+      transition: 0.5s;
+  }
+  
+  .user-box input:focus ~ label,
+  .user-box input:valid ~ label {
+      top: -20px;
+      font-size: 12px;
+      color: #8f3278;
+  }
+  
+  .form-group {
+      margin-bottom: 20px;
+  }
+  
+  label {
+      display: block;
+      font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+  }
+  
+  .btn-container {
+      margin-top:20px;
+      text-align: center;
+      margin-bottom: 40px;   
+  }
+  .btn-normal {
+      background-color: #8f3278;
+      border: none;
+      color: white;  
+      border-radius: 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 15px; /* Ajuster la taille du texte */
+      padding: 10px 20px; /* Ajuster la taille du bouton en fonction du padding */
+      margin: 1px 1px;
+      cursor: pointer;
+      white-space: nowrap;
+  }
+  
+  .btn-fcontainer {
+      text-align: right;   
+  }
+  .btn-forgot {
+      background-color: transparent;
+      border: none;
+      color: #8f3278;  
+      text-align: center;
+      display: inline-block;
+      font-size: 13px; 
+      cursor: pointer;
+      white-space: nowrap;
+  }
+  .btn-forgot:hover span{
+      text-decoration: underline;
+      color: #32568f; 
+  }

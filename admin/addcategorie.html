@@ -1,0 +1,37 @@
+<main>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Produits</title>
+    <link rel="stylesheet" type="text/css" href="../signin/signin.css">
+    <!--link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script-->
+    <style>
+        body {
+        background: rgb(186, 220, 248);
+    }
+    </style>
+    </head>
+    <main>
+        <div class="login-box">
+            <h2 >Ajouter une catégorie :</h2>
+            <form action="addcategorie.php" method="POST">
+                <div class="user-box">
+                    <label for="nom">Nom Catégorie :</label>
+                    <input type="text" class="form-control" id="nom" name="nom" required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description :</label>
+                    <input type="text" class="form-control" id="description" name="description" required>
+                </div>
+                <button type="submit" class="btn-normal">Ajouter</button>
+            </form>
+        </div>
+    </main>

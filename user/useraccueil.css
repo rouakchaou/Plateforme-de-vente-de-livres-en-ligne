@@ -1,0 +1,182 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(186, 220, 248); /* Dark gray background */
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+
+    background-image: url('/inc/fond.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 100% center; /* Centre l'image de fond */
+    background-size: 80%; /* Largeur et hauteur fixées */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap; /* Enable flex items to wrap */
+    justify-content: center; /* Or use 'space-between' for equal spacing */
+    padding: 20px;
+}
+
+.card {
+    width: calc(25% - 40px); /* Divide by three columns, adjust for margin */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    margin: 20px; /* Spacing between cards */
+    position: relative;
+    transition: 0.3s;
+}
+
+.card-image {
+    width: 100%; /* Assure que la zone d'image occupe toute la largeur de la carte */
+    height: 500px; /* Fixe une hauteur pour la zone d'image; ajustez selon vos besoins */
+    overflow: hidden; /* Empêche le débordement de l'image hors de la zone d'image */
+}
+
+.card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Assure que l'image couvre la zone sans se déformer */
+    display: block;
+    transition: transform 0.3s ease; /* Pour un effet de zoom doux */
+}
+
+.card:hover .card-image img {
+    transform: scale(1.1); /* Zoom légèrement l'image au survol */
+}
+
+
+.card-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; /* Centre le contenu */
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.788); /* Fond semi-transparent noir */
+    width: 100%;
+    transition: all 0.3s ease;
+    opacity: 0; /* Hide info by default */
+}
+
+.card:hover .card-info {
+    height: 100%; /* Augmente la hauteur à 60% de la hauteur de la carte au survol */
+    opacity: 1; /* Show info on hover */
+}
+
+.card-title {
+    font-size: 1em; /* Taille spécifique pour le titre de l'auteur */
+    margin: 10px;
+}
+
+.card-author {
+    font-size: 14px;
+    color: #bbb;
+    margin: 5px 0;
+}
+
+.card-btn {
+    background-color: #ff69b4;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    width: 35%;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.counter_container .quantity {
+width: 60px; /* Ajustez la largeur selon vos besoins */
+height: 30px; /* Hauteur du champ de saisie */
+border: 1px solid #ff69b4; /* Bordure rose */
+border-radius: 5px; /* Coins arrondis */
+text-align: center;
+font-size: 16px; /* Taille de police */
+color: #fff; /* Couleur du texte */
+background-color: #8f3278; /* Couleur de fond rose */
+}
+
+/* Assurez-vous que le champ de saisie est lisible et joli sur tous les navigateurs */
+.counter_container .quantity:focus {
+    outline: none;
+    border-color: #8f3278; /* Couleur de bordure lors de la mise au point */
+}
+
+.card-btn {
+    background-color: #8f3278; /* Couleur rose */
+    color: white;
+    padding: 5px 10px; /* Taille réduite */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.counter {
+    display: flex;
+    justify-content: space-between; /* Sépare les boutons du compteur */
+    width: 120px; /* Ajustez la largeur selon vos besoins */
+}
+
+.subtract, .add {
+    /* Styles pour les boutons de compteur */
+    background-color: #8f3278; /* Couleur rose */
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.output {
+    /* Styles pour l'affichage du compteur */
+    margin: 0 10px;
+    font-size: 16px;
+}
+
+.title{
+    color: #adcdff;
+    margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
+    font-size: 32px; /* Ajustez la taille de la police selon vos besoins */
+}
+.card-title {
+    color: #ffffff;
+    margin-bottom: 10px; /* Ajoute de l'espace entre les éléments */
+    font-size: 26px; /* Ajustez la taille de la police selon vos besoins */
+}
+
+.card-author {
+    font-size: 18px; /* Réduit la taille de la police */
+    color: white; /* Couleur du texte */
+    margin-bottom: 10px; /* Espacement sous la description */
+    /* ... autres styles existants ... */
+}
+
+.btn-fcontainer {
+    text-align: right;   
+}
+.btn-forgot {
+    background-color: transparent;
+    border: none;
+    color: #adcdff;  
+    text-align: center;
+    display: inline-block;
+    font-size: 12px; 
+    cursor: pointer;
+    white-space: nowrap;
+}
+.btn-forgot:hover span{
+    text-decoration: underline;
+    color: #f5d7ff; 
+}
+.card-info .inner-div {
+    padding: 20px; /* Ajoutez le padding désiré */
+}

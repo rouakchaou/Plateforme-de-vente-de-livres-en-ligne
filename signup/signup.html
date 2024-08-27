@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sign up</title>
+    <link rel="stylesheet" type="text/css" href="signup.css">
+</head>
+
+<body>
+    <div class="login-box">
+        <h2>Sign up</h2>
+        <form action="signup.php" method="post">
+            <div class="user-box">
+                <input type="text" name="username" required="">
+                <label>Nom d'utilisateur</label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="email" required="">
+                <label>Adresse Email</label>
+            </div>
+            <div class="user-box">
+                <input type="password" name="password" required="">
+                <label>Mot de passe</label>
+            </div>
+            <div class="btn-container">
+            <input class="btn-normal" type="submit" name="submit" value="Sign UP">
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+    const showHiddenPass = (password, loginEye) =>{
+       const input = document.getElementById(loginPass),
+             iconEye = document.getElementById(loginEye)
+    
+       iconEye.addEventListener('click', () =>{
+          // Change password to text
+          if(input.type === 'password'){
+             // Switch to text
+             input.type = 'text'
+    
+             // Icon change
+             iconEye.classList.add('ri-eye-line')
+             iconEye.classList.remove('ri-eye-off-line')
+          } else{
+             // Change to password
+             input.type = 'password'
+    
+             // Icon change
+             iconEye.classList.remove('ri-eye-line')
+             iconEye.classList.add('ri-eye-off-line')
+          }
+       })
+    }
+    showHiddenPass('password','login-eye')
+    </script>
+    <script>
+    const showHiddenPass1 = (passwordId, loginEyeId) => {
+       const input = document.querySelector(`input[name="${passwordId}"]`),
+             iconEye = document.getElementById(loginEyeId);
+    
+       iconEye.addEventListener('click', () => {
+          // Change password to text
+          if (input.type === 'password') {
+             // Switch to text
+             input.type = 'text';
+    
+             // Icon change
+             iconEye.classList.add('ri-eye-line');
+             iconEye.classList.remove('ri-eye-off-line');
+          } else {
+             // Change to password
+             input.type = 'password';
+    
+             // Icon change
+             iconEye.classList.remove('ri-eye-line');
+             iconEye.classList.add('ri-eye-off-line');
+          }
+       });
+    };
+    showHiddenPass('password', 'login-eye');
+    </script>
+</html>
